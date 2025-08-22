@@ -21,9 +21,10 @@ def main():
     #this needs to go from hard-coded to a user input, so all hard-coded filepaths will be changed
     #text_contents = get_book_text("books/frankenstein.txt")
     if len(sys.argv) != 2:
-        print("Improper command, Usage: python3 main.py <file_path>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
-
+        #"Improper command, Usage: python3 main.py <file_path>" apparently this line was tracked
+        #in the cli, big gay, cause I think my wording is more helpful
     book_path = sys.argv[1]
     #print(book_path)
     text_contents = get_book_text(book_path)
